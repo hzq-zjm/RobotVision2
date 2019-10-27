@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ncnn" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Linux64">
+				<Option output="../bin/icefacebaseDLinux64" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option projectLibDirsRelation="-1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+					<Add directory="../../src" />
+					<Add directory="../../src/layer" />
+					<Add directory="../../src/layer/arm" />
+				</Compiler>
+				<MakeCommands>
+					<Build command="" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command=" &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="V5">
+				<Option output="../bin/icefacebaseDAwV5" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gnu_a7_gcc_compiler_v500" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-Wall" />
+					<Add option="-mfloat-abi=softfp -mfpu=neon" />
+					<Add option="-fopenmp" />
+					<Add option="-fPIC" />
+					<Add option="-D__ARM_NEON" />
+					<Add directory="../../src" />
+					<Add directory="../../src/layer" />
+					<Add directory="../../src/layer/arm" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lm -lgomp -lpthread" />
+				</Linker>
+				<MakeCommands>
+					<Build command="" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command=" &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="Android_X86">
+				<Option output="../bin/libicefacebaseDAndroid_X86" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../bin" />
+				<Option object_output="obj/Release/" />
+				<Option type="3" />
+				<Option compiler="gnu_android_x86_compiler_for_arm" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-Wall" />
+					<Add option="-fPIC" />
+					<Add option="-D__ANDROID__" />
+					<Add directory="../../src" />
+					<Add directory="../../src/layer" />
+					<Add directory="../../src/layer/arm" />
+					<Add directory="/opt/androideabi-x86-4.9/prebuilt/linux-x86_64/include" />
+					<Add directory="/opt/androideabi-x86-4.9/prebuilt/linux-x86_64/Android_ndk/include" />
+					<Add directory="/opt/androideabi-x86-4.9/prebuilt/linux-x86_64/Android_ndk/libs/x86/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+				<MakeCommands>
+					<Build command="" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command=" &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="3519">
+				<Option output="../bin/icefacebase3519" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gnu_a7_gcc_compiler_v500" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-Wall" />
+					<Add option="-mfloat-abi=softfp -mfpu=neon" />
+					<Add option="-fopenmp" />
+					<Add option="-fPIC" />
+					<Add option="-D__ARM_NEON" />
+					<Add directory="../../src" />
+					<Add directory="../../src/layer" />
+					<Add directory="../../src/layer/arm" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lm -lgomp -lpthread" />
+				</Linker>
+				<MakeCommands>
+					<Build command="" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command=" &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="6818">
+				<Option output="../bin/ncnn" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="cb6818_compiler" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-Wall" />
+					<Add option="-mfloat-abi=softfp -mfpu=neon" />
+					<Add option="-fopenmp" />
+					<Add option="-fPIC" />
+					<Add option="-D__ARM_NEON" />
+					<Add directory="../../src" />
+					<Add directory="../../src/layer" />
+					<Add directory="../../src/layer/arm" />
+					<Add directory="../../timer" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-lm -lgomp -lpthread" />
+				</Linker>
+				<MakeCommands>
+					<Build command="" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command=" &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="../../src/CMakeLists.txt" />
+		<Unit filename="../../src/Makefile" />
+		<Unit filename="../../src/blob.cpp" />
+		<Unit filename="../../src/blob.h" />
+		<Unit filename="../../src/cpu.cpp" />
+		<Unit filename="../../src/cpu.h" />
+		<Unit filename="../../src/layer.cpp" />
+		<Unit filename="../../src/layer.h" />
+		<Unit filename="../../src/layer/absval.cpp" />
+		<Unit filename="../../src/layer/absval.h" />
+		<Unit filename="../../src/layer/argmax.cpp" />
+		<Unit filename="../../src/layer/argmax.h" />
+		<Unit filename="../../src/layer/arm/absval_arm.cpp" />
+		<Unit filename="../../src/layer/arm/absval_arm.h" />
+		<Unit filename="../../src/layer/arm/batchnorm_arm.cpp" />
+		<Unit filename="../../src/layer/arm/batchnorm_arm.h" />
+		<Unit filename="../../src/layer/arm/bias_arm.cpp" />
+		<Unit filename="../../src/layer/arm/bias_arm.h" />
+		<Unit filename="../../src/layer/arm/convolution_1x1.h" />
+		<Unit filename="../../src/layer/arm/convolution_2x2.h" />
+		<Unit filename="../../src/layer/arm/convolution_3x3.h" />
+		<Unit filename="../../src/layer/arm/convolution_4x4.h" />
+		<Unit filename="../../src/layer/arm/convolution_5x5.h" />
+		<Unit filename="../../src/layer/arm/convolution_7x7.h" />
+		<Unit filename="../../src/layer/arm/convolution_arm.cpp" />
+		<Unit filename="../../src/layer/arm/convolution_arm.h" />
+		<Unit filename="../../src/layer/arm/convolutiondepthwise_3x3.h" />
+		<Unit filename="../../src/layer/arm/convolutiondepthwise_arm.cpp" />
+		<Unit filename="../../src/layer/arm/convolutiondepthwise_arm.h" />
+		<Unit filename="../../src/layer/arm/deconvolution_3x3.h" />
+		<Unit filename="../../src/layer/arm/deconvolution_4x4.h" />
+		<Unit filename="../../src/layer/arm/deconvolution_arm.cpp" />
+		<Unit filename="../../src/layer/arm/deconvolution_arm.h" />
+		<Unit filename="../../src/layer/arm/deconvolutiondepthwise_arm.h">
+			<Option target="V5" />
+			<Option target="Android_X86" />
+			<Option target="3519" />
+		</Unit>
+		<Unit filename="../../src/layer/arm/eltwise_arm.cpp" />
+		<Unit filename="../../src/layer/arm/eltwise_arm.h" />
+		<Unit filename="../../src/layer/arm/innerproduct_arm.cpp" />
+		<Unit filename="../../src/layer/arm/innerproduct_arm.h" />
+		<Unit filename="../../src/layer/arm/lrn_arm.cpp" />
+		<Unit filename="../../src/layer/arm/lrn_arm.h" />
+		<Unit filename="../../src/layer/arm/neon_mathfun.h" />
+		<Unit filename="../../src/layer/arm/pooling_2x2.h" />
+		<Unit filename="../../src/layer/arm/pooling_3x3.h" />
+		<Unit filename="../../src/layer/arm/pooling_arm.cpp" />
+		<Unit filename="../../src/layer/arm/pooling_arm.h" />
+		<Unit filename="../../src/layer/arm/prelu_arm.cpp" />
+		<Unit filename="../../src/layer/arm/prelu_arm.h" />
+		<Unit filename="../../src/layer/arm/relu_arm.cpp" />
+		<Unit filename="../../src/layer/arm/relu_arm.h" />
+		<Unit filename="../../src/layer/arm/scale_arm.cpp" />
+		<Unit filename="../../src/layer/arm/scale_arm.h" />
+		<Unit filename="../../src/layer/arm/sigmoid_arm.cpp" />
+		<Unit filename="../../src/layer/arm/sigmoid_arm.h" />
+		<Unit filename="../../src/layer/arm/slice_arm.h" />
+		<Unit filename="../../src/layer/arm/softmax_arm.cpp" />
+		<Unit filename="../../src/layer/arm/softmax_arm.h" />
+		<Unit filename="../../src/layer/batchnorm.cpp" />
+		<Unit filename="../../src/layer/batchnorm.h" />
+		<Unit filename="../../src/layer/bias.cpp" />
+		<Unit filename="../../src/layer/bias.h" />
+		<Unit filename="../../src/layer/binaryop.cpp" />
+		<Unit filename="../../src/layer/binaryop.h" />
+		<Unit filename="../../src/layer/bnll.cpp" />
+		<Unit filename="../../src/layer/bnll.h" />
+		<Unit filename="../../src/layer/concat.cpp" />
+		<Unit filename="../../src/layer/concat.h" />
+		<Unit filename="../../src/layer/convolution.cpp" />
+		<Unit filename="../../src/layer/convolution.h" />
+		<Unit filename="../../src/layer/convolutiondepthwise.cpp" />
+		<Unit filename="../../src/layer/convolutiondepthwise.h" />
+		<Unit filename="../../src/layer/crop.cpp" />
+		<Unit filename="../../src/layer/crop.h" />
+		<Unit filename="../../src/layer/deconvolution.cpp" />
+		<Unit filename="../../src/layer/deconvolution.h" />
+		<Unit filename="../../src/layer/detectionoutput.cpp" />
+		<Unit filename="../../src/layer/detectionoutput.h" />
+		<Unit filename="../../src/layer/dropout.cpp" />
+		<Unit filename="../../src/layer/dropout.h" />
+		<Unit filename="../../src/layer/eltwise.cpp" />
+		<Unit filename="../../src/layer/eltwise.h" />
+		<Unit filename="../../src/layer/elu.cpp" />
+		<Unit filename="../../src/layer/elu.h" />
+		<Unit filename="../../src/layer/embed.cpp" />
+		<Unit filename="../../src/layer/embed.h" />
+		<Unit filename="../../src/layer/exp.cpp" />
+		<Unit filename="../../src/layer/exp.h" />
+		<Unit filename="../../src/layer/expanddims.cpp" />
+		<Unit filename="../../src/layer/expanddims.h" />
+		<Unit filename="../../src/layer/flatten.cpp" />
+		<Unit filename="../../src/layer/flatten.h" />
+		<Unit filename="../../src/layer/innerproduct.cpp" />
+		<Unit filename="../../src/layer/innerproduct.h" />
+		<Unit filename="../../src/layer/input.cpp" />
+		<Unit filename="../../src/layer/input.h" />
+		<Unit filename="../../src/layer/interp.cpp" />
+		<Unit filename="../../src/layer/interp.h" />
+		<Unit filename="../../src/layer/log.cpp" />
+		<Unit filename="../../src/layer/log.h" />
+		<Unit filename="../../src/layer/lrn.cpp" />
+		<Unit filename="../../src/layer/lrn.h" />
+		<Unit filename="../../src/layer/lstm.cpp" />
+		<Unit filename="../../src/layer/lstm.h" />
+		<Unit filename="../../src/layer/memorydata.cpp" />
+		<Unit filename="../../src/layer/memorydata.h" />
+		<Unit filename="../../src/layer/mvn.cpp" />
+		<Unit filename="../../src/layer/mvn.h" />
+		<Unit filename="../../src/layer/normalize.cpp" />
+		<Unit filename="../../src/layer/normalize.h" />
+		<Unit filename="../../src/layer/padding.cpp" />
+		<Unit filename="../../src/layer/padding.h" />
+		<Unit filename="../../src/layer/permute.cpp" />
+		<Unit filename="../../src/layer/permute.h" />
+		<Unit filename="../../src/layer/pooling.cpp" />
+		<Unit filename="../../src/layer/pooling.h" />
+		<Unit filename="../../src/layer/power.cpp" />
+		<Unit filename="../../src/layer/power.h" />
+		<Unit filename="../../src/layer/prelu.cpp" />
+		<Unit filename="../../src/layer/prelu.h" />
+		<Unit filename="../../src/layer/priorbox.cpp" />
+		<Unit filename="../../src/layer/priorbox.h" />
+		<Unit filename="../../src/layer/proposal.cpp" />
+		<Unit filename="../../src/layer/proposal.h" />
+		<Unit filename="../../src/layer/reduction.cpp" />
+		<Unit filename="../../src/layer/reduction.h" />
+		<Unit filename="../../src/layer/relu.cpp" />
+		<Unit filename="../../src/layer/relu.h" />
+		<Unit filename="../../src/layer/reshape.cpp" />
+		<Unit filename="../../src/layer/reshape.h" />
+		<Unit filename="../../src/layer/rnn.cpp" />
+		<Unit filename="../../src/layer/rnn.h" />
+		<Unit filename="../../src/layer/roipooling.cpp" />
+		<Unit filename="../../src/layer/roipooling.h" />
+		<Unit filename="../../src/layer/scale.cpp" />
+		<Unit filename="../../src/layer/scale.h" />
+		<Unit filename="../../src/layer/sigmoid.cpp" />
+		<Unit filename="../../src/layer/sigmoid.h" />
+		<Unit filename="../../src/layer/slice.cpp" />
+		<Unit filename="../../src/layer/slice.h" />
+		<Unit filename="../../src/layer/softmax.cpp" />
+		<Unit filename="../../src/layer/softmax.h" />
+		<Unit filename="../../src/layer/split.cpp" />
+		<Unit filename="../../src/layer/split.h" />
+		<Unit filename="../../src/layer/spp.cpp" />
+		<Unit filename="../../src/layer/spp.h" />
+		<Unit filename="../../src/layer/squeeze.cpp" />
+		<Unit filename="../../src/layer/squeeze.h" />
+		<Unit filename="../../src/layer/tanh.cpp" />
+		<Unit filename="../../src/layer/tanh.h" />
+		<Unit filename="../../src/layer/threshold.cpp" />
+		<Unit filename="../../src/layer/threshold.h" />
+		<Unit filename="../../src/layer/tile.cpp" />
+		<Unit filename="../../src/layer/tile.h" />
+		<Unit filename="../../src/layer/unaryop.cpp" />
+		<Unit filename="../../src/layer/unaryop.h" />
+		<Unit filename="../../src/layer_declaration.h" />
+		<Unit filename="../../src/layer_registry.h" />
+		<Unit filename="../../src/layer_type.h" />
+		<Unit filename="../../src/layer_type_enum.h" />
+		<Unit filename="../../src/mat.cpp" />
+		<Unit filename="../../src/mat.h" />
+		<Unit filename="../../src/mat_pixel.cpp" />
+		<Unit filename="../../src/net.cpp" />
+		<Unit filename="../../src/net.h" />
+		<Unit filename="../../src/opencv.cpp" />
+		<Unit filename="../../src/opencv.h" />
+		<Unit filename="../../src/paramdict.cpp" />
+		<Unit filename="../../src/paramdict.h" />
+		<Unit filename="../../src/platform.h" />
+		<Unit filename="../../src/platform.h.in" />
+		<Unit filename="../../timer/ZCVCORE_Common.h">
+			<Option target="6818" />
+		</Unit>
+		<Unit filename="../../timer/ZCVCORE_Time.h">
+			<Option target="6818" />
+		</Unit>
+		<Unit filename="../../timer/time_stat.cpp">
+			<Option target="6818" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
