@@ -1,7 +1,7 @@
 # 简介
-.在ARM端实现疲劳驾驶实时检测，检测速度20FPS以上。
-.软件环境:移动端框架ncnn、opencv、qt。
-.硬件环境:samsung6818A53系列ARM,cpu Cortex-A53 8核。
+在ARM端实现疲劳驾驶实时检测，检测速度20FPS以上。
+软件环境:移动端框架ncnn、opencv、qt。
+硬件环境:samsung6818A53系列ARM,cpu Cortex-A53 8核。
 # 检测流程
 通过USB（红外）摄像头采集驾驶员面部图像,基于MTCNN检测驾驶员人脸，然后借助CNN对驾驶员眼部状态进行识别，最后依据眼部PERCLOS准则做出疲劳预警。
 # 具体实现
