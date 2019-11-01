@@ -1,0 +1,2 @@
+n1 close
+n2 open
