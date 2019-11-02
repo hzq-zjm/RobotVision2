@@ -1,0 +1,1 @@
+ncnn¾²Ì¬¿â ./bin/libncnn.a
