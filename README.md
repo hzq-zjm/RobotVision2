@@ -1,4 +1,4 @@
-# 简介
+# 移动端实时疲劳驾驶检测
 在ARM端实现疲劳驾驶实时检测，检测速度20FPS以上。
 软件环境: 移动端框架ncnn、opencv、qt。
 硬件环境: samsung6818A53系列ARM,cpu: Cortex-A53,8核。
